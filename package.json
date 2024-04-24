@@ -7,10 +7,15 @@
   "type": "module",
   "dependencies": {
     "@hono/node-server": "^1.11.0",
-    "hono": "^4.2.7"
+    "cheerio": "1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "hono": "^4.2.7",
+    "node-telegram-bot-api": "^0.65.1",
+    "puppeteer-core": "^22.7.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
+    "@types/node-telegram-bot-api": "^0.64.6",
     "tsx": "^4.7.1",
     "typescript": "^5.4.5"
   }
