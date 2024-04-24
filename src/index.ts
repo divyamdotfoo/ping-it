@@ -1,7 +1,8 @@
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
 import "dotenv/config";
-import puppeteer, { Browser } from "puppeteer-core";
+// import puppeteer, { Browser } from "puppeteer-core";
+import puppeteer, { Browser } from "puppeteer";
 import * as cheerio from "cheerio";
 import TelegramBot from "node-telegram-bot-api";
 
@@ -23,7 +24,6 @@ const initializeBrowserInstance = async () => {
       await browserInstance.close();
     }
     browserInstance = await puppeteer.launch({
-      executablePath: process.env.CHROMIUM_PATH,
       headless: true,
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
