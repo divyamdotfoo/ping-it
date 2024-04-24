@@ -14,8 +14,7 @@ const initializeBrowserInstance = async () => {
   if (isInitializing) return;
   isInitializing = true;
   if (!bot) {
-    const botToken = process.env.BOT!;
-    bot = new TelegramBot(botToken, {
+    bot = new TelegramBot("7043530254:AAE82FLMwEhO38BXudzwW3Eqxr5TnnIZHeI", {
       polling: false,
     });
   }
